@@ -1,0 +1,103 @@
+body {
+    background: url(images/bg.jpg) repeat;
+    background-color: #c3c1b9;    
+}
+p {
+    font: 18px/36px Georgia, "Times New Roman", Times, serif;
+    color: #f1f1f1;
+}
+h6 {
+    font: Helvetica, Arial 14px/50px;
+    color: white;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* header style */
+#header {
+    position: relative;
+    background: url(images/headbg.jpg) repeat-x;
+    height: 150px; width: 100%;
+}
+#banner {
+    margin: 0 auto;
+    background: url(images/headbanner.jpg) no-repeat center top;
+    height: 300px; width: 100%;
+}
+#logo {
+    margin: 0 auto auto -300px;
+    background:url(images/logo.png) no-repeat top;
+    height: 100%; width: 100%;
+    overflow: visible;
+}
+/* intro style */
+#intro {
+    position: relative;
+    border-top: 1px solid #6f1a10;
+    background: url(images/green.jpg) repeat;
+    min-height: 325px;
+}
+#introgradi {
+    position: absolute;
+    background: url(images/introgradi.png) repeat-x;
+    bottom: 0px;
+    margin: auto auto 0 auto;
+    height: 100%; width: 100%;
+}
+#content {
+    position: relative;
+    min-height: 400px;
+    }
+#introtext {
+    background: url(images/veskimees.gif) no-repeat top left;
+    width: 600px; height: 250px;
+    padding: 30px;    
+    overflow: visible;
+}
+
+/* footer style */
+#footer {
+    margin: auto auto 0;
+    border-top: 1px solid #228932;
+    background: url(images/green.jpg) repeat;
+    height: 50px;
+}
+#footergradi {
+    position: absolute;
+    background: url(images/introgradi.png) repeat-x bottom;
+    margin: auto auto 0 auto;
+    height: 50px; width: 100%;
+}
+#sidecol {
+    width: 235px;
+    position: absolute;
+    top: 150px; left: 0;
+    background-color: yellow;
+}
+ul#lang {
+    list-style: none;
+    float: right;
+    width: 960px;
+    margin: 60 auto auto 20px; padding: 0px;    
+}
+ul#topnav {
+    list-style: none;
+    float: left;
+    width: 960px;
+    margin: 120px auto auto 400px; padding: 0px;
+}
+    ul#topnav li a, ul#lang li a {
+        display: block;
+        width: 115px;
+        text-shadow: rgba(0,0,0,0.5) 2px 2px 5px; 
+        text-decoration: none;
+        letter-spacing: 3px;
+        font: bold 18px/12px "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial;
+        color: #7bb9ad;
+        float: left;
+    }
+        ul#topnav li a:hover, ul#topnav li a:active {
+            color: white;
+        }
