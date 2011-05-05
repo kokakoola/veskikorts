@@ -1,11 +1,9 @@
-@import "reset.css";
-
 /* general */
 body {
     background: url(images/bg.jpg) repeat-x;
     background-color: #c6c4bc;    
 }
-p { font-family: 'Cardo', Georgia, "Times New Roman", serif; }
+p { font-family: 'New York', 'Times New Roman', "Times", serif; }
     p.white { font-size: 17px; line-height: 22px; color: #e9e9e9; }
     p.dark { font-size: 16px; line-height: 22px; color: #333440; }
 
@@ -22,6 +20,12 @@ h6 { font: normal 14px/18px 'calibri', Helvetica, Arial; }
     width: 960px;
     margin: 0 auto;
 }
+#kodu li.kodu a, #kodu li.kodu a:hover,
+#leib li.leib a, #leib li.leib a:hover,
+#lust li.lust a, #lust li.lust a:hover,
+#album li.album a, #album li.album a:hover,
+#veski li.veski a, #veski li.veski a:hover
+{ color: white; font-size: inherit; }
 
 /* header */
 #header {
@@ -48,7 +52,7 @@ ul#topnav {
         text-decoration: none;
         letter-spacing: 2px;
         font: bold 16px/12px "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial;
-        color: #7bb9ad;
+        color: #84afa0;
         float: left;
     }
 ul#language {
@@ -62,8 +66,8 @@ ul#language {
         text-shadow: rgba(0,0,0,0.5) 2px 2px 5px; 
         text-decoration: none;
         letter-spacing: 2px;
-        font: normal 14px/22px 'Ubuntu',"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial;
-        color: #8ed5ca;
+        font: normal 14px/22px "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial;
+        color: #b8d9cd;
         float: right;
     }
 
@@ -84,6 +88,7 @@ ul#language {
         clear: both;
     }
 * html png-ie { display: none; }
+
 #screen {
     position: relative;
     width: 515px; height: 290px;
@@ -113,9 +118,9 @@ ul#language {
             margin:0 0 20px 0;
         }
 .outershadow {
-    -moz-box-shadow: 2px 3px 14px #5b5b5b;
-    -webkit-box-shadow: 2px 3px 14px #5b5b5b;
-    box-shadow: 2px 3px 14px #5b5b5b;
+    -moz-box-shadow: 2px 3px 18px #000000;
+    -webkit-box-shadow: 2px 3px 18px #000000;
+    box-shadow: 2px 3px 18px #000000;
         }
 #content {
     position: relative;
@@ -136,7 +141,7 @@ ul#language {
 }
     .column p:first-line {text-indent: 70px; text-shadow: 0px 0px 1px #323232; color: #506c97; }
     .column span { text-shadow: 0px 0px 1px #323232; color: #506c97; }
-    .column p img { float: right; margin: 0px -20px 20px 0; }
+    .column p img { float: right; margin: 20px -20px 20px 0; }
     .column p a {
         color: inherit;
         text-decoration: none;
@@ -191,7 +196,7 @@ ul.week {
 }
     #sign p {
         padding: 25px;
-        font: 20px/22px 'Radley',"Times New Roman", serif;;
+        font: 18px/22px 'Georgia', "Times New Roman", serif;
         text-align: center;
         color: #864822;
         text-shadow:#dacec6 0px 1px 0, #000 0 -1px 0;
@@ -211,7 +216,7 @@ ul.week {
     }
         #news p span, #news p span a {
             color: #6f2d42;
-            font: 18px/22px 'Cardo', Georgia, "Times New Roman", serif;
+            font: 18px/22px 'New York', 'Times New Roman', "Times", serif;
         }
 
 /* footer style */
@@ -225,5 +230,17 @@ ul.week {
     float:left;
 }
 
-ul#topnav li a:hover, ul.week li a:hover { font-size: larger; }
-ul#topnav li a:hover, ul#topnav li a:active, ul#language li a:hover, ul#language li a:active, ul.week li a:hover, ul.week li a:active,  ul.week li:active, ul week li:active hover { color: white; }
+ul#topnav li a:hover,
+ul.week li a:hover { font-size: larger; }
+
+ul#topnav li a:hover,
+ul#language li a:hover { color: #d2ebe2; }
+
+ul#topnav li a:active,
+ul#language li a:active { color: white; }
+
+ul.week li a:hover,
+ul.week li a:active,
+ul.week li a:active hover { color: #facbcb; }
+
+li.active a { color:white !important; }
