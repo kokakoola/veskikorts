@@ -1,14 +1,9 @@
-var images =  $('.column p img');
-$.each(images, function() {
-    $(this).removeAttr('scr');
-});
+
 
 $(document).ready(function() {
     $('#flag div').hide();
     $('#flag div').first().show();
     $('#flag ul li').first().addClass('active');
-
-
    
     $('#flag ul li a').click(function(){
         $('#flag ul li').removeClass('active');
