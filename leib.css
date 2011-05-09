@@ -10,7 +10,7 @@ p { font-family: 'New York', 'Times New Roman', "Times", serif; }
 h3 { font: italic 28px/35px Times; color: #496083; border-bottom: 1px dotted white; }
 
 h6 { font: normal 14px/18px 'calibri', Helvetica, Arial; }
-    h6.footer { color: #c6c4bc; line-height: 100px; }
+    h6.footer { color: #c6c4bc; line-height: 80px; }
     h6.pink { color: #f4a1a1; }
 
 #bgimage {
@@ -193,13 +193,20 @@ ul#week {
 
 /* footer style */
 #footer {
-    margin: auto auto 0;
+    margin: auto auto 10px;
     width: 100%;
-    background: url(images/footer.jpg) repeat-x;
-    height: 90px;
+    background-color: #340403;
+    height: 80px;
     text-align: center;
     position: relative;
     float:left;
+    clear: both;
+}
+#footerwrapper {
+    background: url(images/footpic.jpg) no-repeat center top;
+    margin: 0 auto;
+    height: 80px;
+    z-index: 20;
 }
 
 ul#topnav li a:hover,
